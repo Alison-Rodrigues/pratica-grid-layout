@@ -8,6 +8,7 @@
 :root {
     --body-bg-color: #131E2F;
     --font-color: #FFFFFF;
+    --button-bg-color: #01A5B1;
 }
 body {
     background: var(--body-bg-color);
@@ -39,8 +40,37 @@ body {
 .info .description, .option {
     opacity: 0.7;
 }
+.colors {
+    display: flex;
+    align-items: center;
+}
 .color {
-    width: 10px;
-    height: 10px;
+    width: 25px;
+    height: 25px;
     background-color: #EEEEEE;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.color:nth-child(2) {
+    background-color: #000000;
+}
+.sizes .size {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--font-color);
+    border: 1px solid #003775;
+    padding: 5px;
+    border-radius: 50%;
+}
+.button-buy {
+    background: var(--button-bg-color);
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--font-color);
+    letter-spacing: 5px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
