@@ -33,12 +33,25 @@ body {
 }
 .info {
     display: grid;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     place-self: start;
     gap: 20px;
 }
 .info .description, .option {
     opacity: 0.7;
+    font-size: 1rem;
+}
+.price-container {
+    display: flex;
+    flex-direction: column;
+}
+.price-old {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+.price {
+    font-size: 1.2rem;
 }
 .colors {
     display: flex;
@@ -54,13 +67,17 @@ body {
 .color:nth-child(2) {
     background-color: #000000;
 }
+.title {
+    font-size: 2rem;
+}
 .sizes .size {
     margin: 0 10px;
     text-decoration: none;
     color: var(--font-color);
-    border: 1px solid #003775;
+    border: 1px solid var(--button-bg-color);
     padding: 5px;
     border-radius: 50%;
+    font-size: 1rem;
 }
 .button-buy {
     background: var(--button-bg-color);
@@ -73,4 +90,8 @@ body {
     font-weight: 700;
     border-radius: 5px;
     font-size: 1.2rem;
+    transition: 0.2s;
+}
+.button-buy:hover {
+    background-color: #00717C;
 }
